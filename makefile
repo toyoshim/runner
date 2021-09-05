@@ -2,7 +2,7 @@ CFLAGS  = -V -mmcs51 --model-large --xram-size 0x1800 --xram-loc 0x0000 --code-s
 CC      = sdcc
 FLASHER = ../CH55x_python_flasher/chflasher.py
 TARGET  = runner
-OBJS	= main.rel ch559.rel serial.rel
+OBJS	= main.rel ch559.rel serial.rel timer3.rel
 
 all: $(TARGET).bin
 
